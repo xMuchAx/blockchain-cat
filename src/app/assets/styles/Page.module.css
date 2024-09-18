@@ -1,0 +1,113 @@
+.homepageWrapper {
+    display: flex;
+    width: var(--size-1280);
+    max-width: 100%;
+    margin: 0 auto;
+    padding-block: var(--size-50);
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroWrapper {
+    display: flex;
+    /* padding: 0px var(--size-100); */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - var(--size-50));
+    height: calc(100vh - var(--size-50));
+}
+
+.heroContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-20);
+    position: relative;
+}
+
+
+.heroText h1 span {
+    color: var(--orange-100);
+}
+
+.heroAnchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-20);
+}
+
+.heroBar {
+    display: flex;
+    padding: var(--size-20) var(--size-50);
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-50);
+    border-radius: var(--size-50);
+    background-color: var(--white-10);
+}
+
+.heroBar span {
+    text-transform: uppercase;
+    font-weight: var(--font-w-700);
+    color: var(--white-100);
+    font-size: var(--size-14);
+}
+
+.heroBarDot {
+    display: flex;
+    width: var(--size-10);
+    height: var(--size-10);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-10);
+    border-radius: var(--size-50-pct);
+    background-color: var(--white-20);
+}
+
+.heroBottom {
+    display: flex;
+    padding-block-end: var(--size-50);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-100);
+    align-self: stretch;
+}
+
+.heroAnchor span {
+    text-transform: uppercase;
+    color: var(--white-100);
+    font-weight: var(--font-w-700);
+    font-size: var(--size-12);
+}
+
+.heroArrow {
+    display: flex;
+    width: var(--size-30);
+    height: var(--size-50);
+    padding: var(--size-10);
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--size-10);
+    border-radius: var(--size-20);
+    border: 1px solid var(--white-100);
+}
+
+.heroDotArrow {
+    display: flex;
+    width: var(--size-5);
+    height: var(--size-5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: var(--size-50-pct);
+    background: var(--white-100);
+}
