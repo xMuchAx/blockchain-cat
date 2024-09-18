@@ -92,4 +92,10 @@
     --size-30: 1.875rem;
     --size-32: 2rem;
     --size-50: 50%;
+
+    /* Linear gradient */
+    --linear-gradient: linear-gradient(180deg, var(--orange-25) 0%, var(--orange-25) 100%);
+
+    /* Blur */
+    --blur: blur(12.5rem);
 }
