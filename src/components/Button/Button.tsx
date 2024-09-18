@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Button.css";
 
 type ButtonProps = {
@@ -20,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
             onClick={onClick}
             className={`btn ${
                 variant === "primary" ? "primary" : "secondary"
-            } ${rounded ? "btn-round" : ""}`}
+            } ${rounded ? "btnRound" : "btnFull"}`}
         >
             {children}
         </button>

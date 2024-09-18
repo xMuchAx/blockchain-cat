@@ -6,29 +6,34 @@
   display: flex;
   gap: 3.125rem;
 }
+
 .dashboard .colored {
   color: var(--orange-100);
 }
-.dashboard > div {
+
+.dashboard>div {
   display: flex;
   gap: 3.125rem;
   flex-direction: column;
 }
-.dashboard > div > div {
+
+.dashboard>div>div {
   background-color: var(--white-10);
   padding: var(--size-24);
   border-radius: var(--size-8);
   color: var(--white-100);
 }
-.dashboard > .left {
+
+.dashboard>.left {
   width: 70%;
 }
-.dashboard > .left > .top {
+
+.dashboard>.left>.top {
   padding: 0;
   background-color: transparent;
 }
 
-.dashboard > .left > .top p {
+.dashboard>.left>.top p {
   color: var(--grey-100);
   font-size: var(--size-12);
   font-weight: var(--font-w-400);

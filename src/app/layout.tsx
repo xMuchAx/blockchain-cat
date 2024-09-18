@@ -1,5 +1,9 @@
-import "./assets/styles/global.css";
 import { ReactNode } from "react";
+
+import "./assets/styles/Global.css";
+
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 export const metadata = {
     title: "Cat² - Le chat qui bâtit ton trésor une pelle à la fois",
@@ -13,13 +17,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="fr">
             <body>
-                <header>
-                    <h1>Cat²</h1>
-                </header>
-                <main>{children}</main>
-                <footer>
-                    <p>© 2024 Cat². Tous droits réservés.</p>
-                </footer>
+                <Header />
+                <main className="mainWrapper">{children}</main>
+                <Footer />
             </body>
         </html>
     );
