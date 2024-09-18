@@ -4,6 +4,7 @@
 body {
   font-size: var(--font-s-body);
   font-family: var(--font-corps);
+  background-color: var(--black-100);
 }
 
 h1,
@@ -37,4 +38,18 @@ h5 {
 
 h6 {
   font-size: var(--font-s-h6);
+}
+
+.btn-round {
+  border: 0;
+  padding: var(--size-12) var(--size-22);
+  border-radius: var(--size-32);
+  color: var(--white-100);
+  font-weight: var(--font-w-700);
+}
+.primary {
+  background: var(--orange-100);
+}
+.secondary {
+  background: var(--grey-50);
 }
