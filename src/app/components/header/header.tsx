@@ -1,14 +1,15 @@
 import "./../../assets/styles/global.css";
-import styles from "./../../assets/styles/main.module.css";
+import "./header.css";
 
-export default function Home() {
+export default function Header() {
   return (
-    <div className={styles.page}>
-      <main>
-        <h1>Titre 1</h1>
-        <h2>Titre 2</h2>
-        <p>Paragraphe</p>
-      </main>
-    </div>
+    <header>
+      <img alt="Logo" />
+      <p>CAT²</p>
+      <div>
+        <button>Inscription</button>
+        <button>Connexion</button>
+      </div>
+    </header>
   );
 }

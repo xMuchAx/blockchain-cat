@@ -3,7 +3,7 @@
 :root {
   --clr-bg: #1d1c1c;
   --clr-bg-lame: rgba(252, 254, 255, 0.1);
-  --clr-orange: ##f64c02;
+  --clr-orange: #f64c02;
   --clr-grey: #b5b5b5;
   --clr-text: #fcfeff;
   --bd-rad-sm: 8px;
@@ -20,6 +20,8 @@ body {
   overflow-x: hidden;
   font-size: var(--ft-size-p);
   font-family: "Noto Sans", sans-serif;
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
 }
 h1,
 h2 {
@@ -30,4 +32,13 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+}
+button {
+  padding: 16px 24px;
+  border: 0;
+  border-radius: 25px;
+  font-family: "Geologica";
+  color: var(--clr-text);
+  font-weight: 700;
+  background-color: var(--clr-orange);
 }
