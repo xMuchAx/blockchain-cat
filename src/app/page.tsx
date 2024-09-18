@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "./assets/styles/global.css";
 import styles from "./assets/styles/main.module.css";
 
