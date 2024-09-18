@@ -1,26 +1,26 @@
 header {
   margin: auto;
-  max-width: 1280px;
+  max-width: 80rem;
   width: calc(100% - 32px);
   position: sticky;
-  top: 40px;
+  top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 30px;
+  padding: var(--size-16) var(--size-30);
   border-radius: 75px;
-  box-sizing: border-box;
-  background: rgba(252, 254, 255, 0.1);
+  background: var(--white-20);
   backdrop-filter: blur(2px);
+  color: var(--white-100);
 }
 header div {
   display: flex;
   gap: 8px;
 }
 header p {
-  color: var(--White-100, #fcfeff);
-  font-family: Geologica;
-  font-size: 28px;
+  color: var(--white-100);
+  font-family: "Geologica";
+  font-size: var(--font-s-h3);
   font-weight: 700;
   margin: 0;
 }

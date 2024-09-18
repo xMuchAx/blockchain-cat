@@ -9,6 +9,7 @@ html {
 body {
   font-size: var(--font-s-body);
   font-family: var(--font-corps);
+  background-color: var(--black-100);
 }
 
 h1,
@@ -43,7 +44,7 @@ h5 {
 h6 {
   font-size: var(--font-s-h6);
 }
-button {
+.button-ro {
   padding: 16px 24px;
   border: 0;
   border-radius: 25px;
@@ -51,4 +52,10 @@ button {
   color: var(--clr-text);
   font-weight: 700;
   background-color: var(--clr-orange);
+}
+.button-ro.primary {
+  background-color: var(--orange-100);
+}
+.button-ro.secondary {
+  background-color: var(--grey-50);
 }

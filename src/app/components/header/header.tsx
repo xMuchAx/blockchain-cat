@@ -7,8 +7,8 @@ export default function Header() {
       <img alt="Logo" />
       <p>CAT²</p>
       <div>
-        <button>Inscription</button>
-        <button>Connexion</button>
+        <button className="button-ro primary">Inscription</button>
+        <button className="button-ro secondary">Connexion</button>
       </div>
     </header>
   );
