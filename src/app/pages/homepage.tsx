@@ -5,6 +5,7 @@ const Homepage: React.FC = () => {
         <div>
             <h1>Welcome to the Homepage</h1>
             <p>This is the homepage of your application.</p>
+
         </div>
     );
 };
