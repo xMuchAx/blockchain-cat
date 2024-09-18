@@ -8,7 +8,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: var(--size-16) var(--size-30);
-  border-radius: 75px;
+  border-radius: var(--size-75);
   background: var(--white-20);
   backdrop-filter: blur(2px);
   color: var(--white-100);
@@ -17,7 +17,7 @@ header div {
   display: flex;
   gap: 8px;
 }
-header p {
+header > p {
   color: var(--white-100);
   font-family: "Geologica";
   font-size: var(--font-s-h3);
