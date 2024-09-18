@@ -6,12 +6,19 @@
   --clr-orange: ##f64c02;
   --clr-grey: #b5b5b5;
   --clr-text: #fcfeff;
+  --bd-rad-sm: 8px;
+  --bd-rad-me: 16px;
+  --bd-rad-lar: 75px;
+  --ft-size-sm: 0.75rem;
+  --ft-size-p: 1rem;
+  --ft-size-h1: 1rem;
+  --ft-size-h2: 1rem;
 }
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-size: 1rem;
+  font-size: var(--ft-size-p);
   font-family: "Noto Sans", sans-serif;
 }
 h1,
