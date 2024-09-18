@@ -1,9 +1,9 @@
 import Image from "next/image";
-import "./header.css";
+import styles from "./header.module.css";
 import logo from "./../../assets/images/svg/logo/logo-cat__white.svg";
 export default function Home() {
   return (
-    <header>
+    <header className={styles.header}>
       <Image src={logo} alt={"Logotype CAT²"} />
       <p>CAT²</p>
       <div>

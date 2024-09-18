@@ -6,7 +6,9 @@ body {
   font-family: var(--font-corps);
   background-color: var(--black-100);
 }
-
+main {
+  min-height: calc(100vh - 125px);
+}
 h1,
 h2,
 h3,
