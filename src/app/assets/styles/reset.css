@@ -66,4 +66,5 @@ p,
 blockquote {
     margin: 0;
     padding: 0;
+    color: var(--white-100);
 }

@@ -1,0 +1,30 @@
+import React from "react";
+
+import "./Button.css";
+
+type ButtonProps = {
+    variant: "primary" | "secondary";
+    rounded: boolean;
+    children: React.ReactNode;
+    onClick?: () => void;
+};
+
+const Button: React.FC<ButtonProps> = ({
+    variant,
+    rounded,
+    children,
+    onClick,
+}) => {
+    return (
+        <button
+            onClick={onClick}
+            className={`btn ${
+                variant === "primary" ? "primary" : "secondary"
+            } ${rounded ? "btn-round" : ""}`}
+        >
+            {children}
+        </button>
+    );
+};
+
+export default Button;
