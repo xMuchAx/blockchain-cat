@@ -1,8 +1,9 @@
 import "./assets/styles/Global.css";
-import styles from "./assets/styles/Page.module.css";
+import styles from "./assets/styles/Homepage.module.css";
 import Image from "next/image";
 import Button from "../components/Button/Button";
 import CoinWallet from "./assets/images/svg/wallet/wallet-cat__full.svg";
+import Chart from "../components/Chart/Chart";
 
 export default function Home() {
     return (
@@ -29,13 +30,13 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.heroBottom}>
-                    <div className={styles.heroBar}>
+                    {/* <div className={styles.heroBar}>
                         <span>Transparence</span>
                         <div className={styles.heroBarDot}></div>
                         <span>Décentralisation</span>
                         <div className={styles.heroBarDot}></div>
                         <span>Sécurité</span>
-                    </div>
+                    </div> */}
                     <div className={styles.heroAnchor}>
                         <span>Découvrir</span>
                         <div className={styles.heroArrow}>
@@ -44,7 +45,19 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className={styles.chartWrapper}>
+                <Chart />
+            </section>
+            <section className={styles.gridWrapper}>
+                <div className={styles.gridLeft}></div>
+                <div className={styles.gridRight}>
+                    <div className={styles.gridTop}>
+                        <div className={styles.gridTopLeft}></div>
+                        <div className={styles.gridTopRight}></div>
+                    </div>
+                    <div className={styles.gridBottom}></div>
+                </div>
+            </section>
         </div>
     );
 }
-

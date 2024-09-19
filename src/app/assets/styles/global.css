@@ -6,6 +6,7 @@ body {
   font-family: var(--font-corps);
   background-color: var(--black-100);
   position: relative;
+  height: 100%;
 }
 
 h1,
@@ -57,5 +58,7 @@ h6 {
 }
 
 .mainWrapper {
-  height: calc(100vh - 150px);
+  max-width: calc(100% - var(--size-32));
+  width: var(--size-1280);
+  margin: -80px auto 0 auto;
 }
