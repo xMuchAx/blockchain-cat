@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: var(--size-16);
-  padding: var(--size-16);
+  padding-block: var(--size-16);
 }
 
 .footer>p {

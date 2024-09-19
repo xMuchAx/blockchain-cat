@@ -10,20 +10,23 @@ export default function Home() {
         <div className={styles.homepageWrapper}>
             <section className={styles.heroWrapper}>
                 <div className={styles.heroContent}>
-                    <div className={styles.heroText}>
-                        <h1>
-                            Le <span>chat</span> qui bâtit ton{" "}
-                            <span>trésor</span> une <span>pelle</span> à la fois
-                        </h1>
-                        <p>
-                            CAT², la monnaie numérique qui allie transparence,
-                            sécurité et décentralisation, pour bâtir ton trésor
-                            en toute confiance.
-                        </p>
+                    <div className={styles.heroTextWrapper}>
+                        <div className={styles.heroText}>
+                            <h1>
+                                Le <span>chat</span> qui bâtit ton{" "}
+                                <span>trésor</span> une <span>pelle</span> à la
+                                fois
+                            </h1>
+                            <p>
+                                CAT², la monnaie numérique qui allie
+                                transparence, sécurité et décentralisation, pour
+                                bâtir ton trésor en toute confiance.
+                            </p>
+                            <div className="eclipse"></div>
+                        </div>
                         <Button variant="primary" rounded={false}>
                             Commencer l&apos;aventure
                         </Button>
-                        <div className="eclipse"></div>
                     </div>
                     <div className="hero-image">
                         <Image src={CoinWallet} alt="Coin Wallet"></Image>

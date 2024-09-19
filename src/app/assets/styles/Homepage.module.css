@@ -18,13 +18,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: var(--size-100);
+}
+
+.heroTextWrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--size-50);
 }
 
 .heroText {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--size-30);
+    gap: var(--size-16);
     position: relative;
 }
 

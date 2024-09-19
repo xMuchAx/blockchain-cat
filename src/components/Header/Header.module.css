@@ -1,10 +1,9 @@
 .header {
   position: sticky;
-  top: var(--size-20);
+  top: var(--size-50);
   max-width: calc(100% - var(--size-32));
   height: 5rem;
   width: var(--size-1280);
-  width: 100%;
   margin: 0 auto;
   background: var(--white-10);
   border-radius: var(--size-75);
