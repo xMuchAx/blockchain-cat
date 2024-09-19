@@ -3,6 +3,8 @@ import Image from "next/image";
 import Button from "../../components/Button/Button";
 import Coin from "../assets/images/png/coin/coin-cat__full.png";
 import React from "react";
+import ReactDOM from "react-dom";
+import HistoryItem from "../../components/Historique/Historique";
 import { ArrowRight } from "phosphor-react";
 export default function Header() {
     return (
@@ -15,7 +17,7 @@ export default function Header() {
                     <p>Bienvenue sur votre portefeuille</p>
                 </div>
                 <div className={styles.bottom}>
-                    <p>Graphe</p>
+                    <strong>Graphe</strong>
                 </div>
             </div>
             <div className={styles.right}>
@@ -45,6 +47,7 @@ export default function Header() {
                         </div>
                         <div>
                             <span className={styles.devise}>320$</span>
+                            {/* <ArrowRight size={16} /> */}
                             <span className={styles.deviseCat}>
                                 320{" "}
                                 <Image
@@ -67,21 +70,20 @@ export default function Header() {
                 <div className={styles.hist}>
                     <strong>Historique des transactions</strong>
                     <ul>
-                        <li className={styles.up}>
-                            <div>
-                                <strong>Transaction #324</strong>
-                                <p>Recu par Alice</p>
-                            </div>
-                            <div>
-                                <strong>
-                                    - 32 <span>CAT²</span>
-                                </strong>
-                                <p>17/09/2024</p>
-                            </div>
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <HistoryItem
+                            direction="up"
+                            id="324"
+                            recipient="Alice"
+                            amount={32}
+                            date="17/09/2024"
+                        />
+                        <HistoryItem
+                            direction="down"
+                            id="324"
+                            recipient="Joe"
+                            amount={332}
+                            date="17/09/2028"
+                        />
                     </ul>
                     <Button variant="secondary" rounded={false}>
                         Voir toutes les transactions
