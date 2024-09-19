@@ -16,12 +16,12 @@ const Frame: React.FC<FrameProps> = ({ children }) => {
 };
 const Inscription: React.FC = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.logoSection}>
-                <img src="./assets/images/svf/logo/wallet-cat_full.svg" className={styles.logo} />
+        <section className={styles.inscription_page}>
+            <div className={styles.left}>
+                <img src="./assets/images/svg/wallet/wallet-cat_full.svg" className={styles.logo} />
             </div>
 
-            <div className={styles.formSection}>
+            <div className={styles.right}>
                 <Frame>
                     <h1>CAT²</h1>
                     <h2>, le chat qui batit ton trésor</h2>
@@ -75,7 +75,7 @@ const Inscription: React.FC = () => {
                     </form>
                 </Frame>
             </div>
-        </div>
+        </section>
     );
 };
 
