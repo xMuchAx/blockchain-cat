@@ -3,7 +3,7 @@ import Image from "next/image";
 import Coin from "../assets/images/png/coin/coin-cat__full.png";
 export default function Header() {
     return (
-        <main className={styles.dashboard}>
+        <section className={styles.dashboard}>
             <div className={styles.left}>
                 <div className={styles.top}>
                     <h1>
@@ -28,6 +28,6 @@ export default function Header() {
                 </div>
                 <div className={styles.transfert}></div>
             </div>
-        </main>
+        </section>
     );
 }
