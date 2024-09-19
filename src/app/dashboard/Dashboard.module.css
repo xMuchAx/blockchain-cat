@@ -6,7 +6,6 @@
     display: flex;
     gap: var(--size-20);
 }
-
 .dashboard .colored {
     color: var(--orange-100);
 }
@@ -25,7 +24,7 @@
 }
 
 .dashboard > .left {
-    width: 70%;
+    width: 65%;
 }
 
 .dashboard > .left > .top {
@@ -41,6 +40,17 @@
 }
 .dashboard > .right {
     flex: 2;
+}
+.dashboard > .right .send {
+    display: flex;
+    gap: var(--size-10);
+    margin: var(--size-24) 0 0 0;
+}
+.dashboard > .right .send button {
+    font-size: var(--size-14);
+    padding: var(--size-12) var(--size-14);
+    flex: 1;
+    white-space: nowrap;
 }
 .wallet {
     display: flex;
@@ -122,9 +132,6 @@
     gap: var(--size-10);
     align-items: center;
 }
-.transfert > div svg {
-    width: var(--size-16);
-}
 .flagUs {
     width: var(--size-20);
     height: var(--size-20);
@@ -133,4 +140,12 @@
     background-size: cover;
     border-radius: 50%;
     margin: 0 var(--size-10) 0 0;
+}
+.hist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-24);
+}
+.hist > strong {
+    font-size: var(--size-16);
 }
