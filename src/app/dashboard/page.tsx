@@ -6,6 +6,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import HistoryItem from "../../components/Historique/Historique";
 import { ArrowRight } from "phosphor-react";
+import TransfertWallet from "../../components/TransfertWallet/TransfertWallet";
 export default function Header() {
     return (
         <section className={styles.dashboard}>
@@ -21,52 +22,7 @@ export default function Header() {
                 </div>
             </div>
             <div className={styles.right}>
-                <div>
-                    <div className={styles.wallet}>
-                        <div>
-                            <strong>Portefeuille</strong>
-                            <p>MAJ à l’instant</p>
-                        </div>
-                        <div>
-                            <span>10</span>
-                            <Image
-                                src={Coin}
-                                alt={"Pièce CAT²"}
-                                className={styles.piece}
-                            />
-                        </div>
-                    </div>
-                    <hr />
-                    <div className={styles.transfert}>
-                        <div>
-                            <div className={styles.flagUs}></div>
-                            <select>
-                                <option>US dollars</option>
-                                <option>Euros</option>
-                            </select>
-                        </div>
-                        <div>
-                            <span className={styles.devise}>320$</span>
-                            {/* <ArrowRight size={16} /> */}
-                            <span className={styles.deviseCat}>
-                                320{" "}
-                                <Image
-                                    src={Coin}
-                                    alt={"Pièce CAT²"}
-                                    className={styles.piece}
-                                />
-                            </span>
-                        </div>
-                    </div>
-                    <div className={styles.send}>
-                        <Button variant="primary" rounded={false}>
-                            Envoyer un token
-                        </Button>
-                        <Button variant="secondary" rounded={false}>
-                            Gérer les tokens
-                        </Button>
-                    </div>
-                </div>
+                <TransfertWallet />
                 <div className={styles.hist}>
                     <strong>Historique des transactions</strong>
                     <ul>
